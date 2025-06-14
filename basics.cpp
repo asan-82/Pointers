@@ -11,7 +11,10 @@ int main()
     int a=5;
     cout<<&a; //gives the address of a
 
-    int *ptr1; //using this u can store address of a variable storing integer value/ int variable
+    int* ptr1=&a; //using this u can store address of a variable storing integer value/ int variable
 
-    float *ptr2; //using this u can store address of a variable storing float value/ float variable
+    float b=9.2;
+    float *ptr2=&b; //using this u can store address of a variable storing float value/ float variable
+
+    cout<<endl<<ptr1<<" "<<ptr2;
 }
