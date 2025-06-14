@@ -5,6 +5,8 @@
 // even the pointer variable would have its own address
 // if a pointer is declared and not initialised, it'll point to some random address
 
+// &ptr gives the address of the pointer variable itself and not the address stored in ptr
+
 #include<iostream>
 using namespace std;
 
@@ -23,5 +25,7 @@ int main()
      // DECLARATION AND INITIALISATION TOGETHER
     float *ptr2=&b; //using this u can store address of a variable storing float value/ float variable
 
-    cout<<endl<<ptr1<<" "<<ptr2;
+    cout<<endl<<ptr1<<" "<<ptr2<<endl;
+
+    cout<<&ptr1; // address of ptr1 itself
 }
